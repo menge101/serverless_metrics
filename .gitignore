@@ -1,0 +1,6 @@
+# bootstrapped ignores
+*_bootstrapper.sh
+.idea/*
+.orig
+/*venv/
+
