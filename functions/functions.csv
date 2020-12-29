@@ -5,3 +5,5 @@ PYTHON_2_7, python, python.lambda_handler
 NODEJS_12_X, node, lambda.handler
 NODEJS_10_X, node, lambda.handler
 GO_1_X, go, main
+RUBY_2_7, ruby, ruby.LambdaFunctions::Handler.process
+RUBY_2_5, ruby, ruby.LambdaFunctions::Handler.process
