@@ -2,7 +2,7 @@
 
 from aws_cdk import core
 
-from .deploy import DeployStack
+from deploy_stack import DeployStack
 
 
 app = core.App()

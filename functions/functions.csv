@@ -1,0 +1,7 @@
+runtime,location, handler
+PYTHON_3_8, python, python.lambda_handler
+PYTHON_3_7, python, python.lambda_handler
+PYTHON_2_7, python, python.lambda_handler
+NODEJS_12_X, node, lambda.handler
+NODEJS_10_X, node, lambda.handler
+GO_1_X, go, main

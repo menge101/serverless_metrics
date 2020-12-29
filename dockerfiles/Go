@@ -1,0 +1,17 @@
+FROM amazonlinux
+RUN yum -y install wget tar gzip git
+ARG golang_version=1.15.6
+ENV gotar=go$golang_version.linux-amd64.tar.gz
+ENV GOOS=linux
+RUN wget -c https://golang.org/dl/$gotar
+RUN tar --help
+RUN tar -C /usr/local/ -xzf "$gotar"
+ENV PATH="/usr/local/go/bin:${PATH}"
+RUN mkdir src
+VOLUME /main
+RUN mkdir build
+VOLUME /build
+COPY go_build.sh go_build.sh
+RUN chmod 777 go_build.sh
+WORKDIR main
+CMD '/bin/bash'

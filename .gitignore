@@ -4,3 +4,11 @@
 .orig
 /*venv/
 
+# ignoring the main binary built for the Go function
+/functions/go/main
+
+#ignore node modules in deploy folder
+/deploy/node_modules
+
+#ignore cdk out
+/deploy/cdk.out

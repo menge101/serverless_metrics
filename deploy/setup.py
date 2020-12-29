@@ -19,10 +19,11 @@ setuptools.setup(
     packages=setuptools.find_packages(where="deploy"),
 
     install_requires=[
-        "aws-cdk.core==1.69.0",
+        "aws-cdk.core",
+        "aws-cdk.aws-lambda",
     ],
 
-    python_requires=">=3.6",
+    python_requires=">=3.9",
 
     classifiers=[
         "Development Status :: 4 - Beta",
