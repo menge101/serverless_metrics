@@ -12,3 +12,6 @@
 
 #ignore cdk out
 /deploy/cdk.out
+
+#ignore maven target content
+/functions/src/hello_world/target/

@@ -12,3 +12,11 @@ This is really just for my own recollection later.
 * Invoking a function from cli  
 `aws lambda invoke --function-name <function_name> <output_file>
 `
+
+* Building Go binary  
+`d run -it -v $(pwd)/functions/go:/build -v $(pwd)/functions/src:/main  go_build:latest
+`
+
+* Building Java binaries  
+`./scripts/java_8_build.sh`  
+`./scripts/java_11_build.sh`
